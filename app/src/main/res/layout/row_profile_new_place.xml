@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/iv_profile_icon"
+            android:layout_width="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_add_to_photos"
+            android:contentDescription="@string/star" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tw_profile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/sea_thai_restaurant"/>
+
+            <TextView
+                android:id="@+id/tw_profile_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text="@string/england"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tw_profile_time_passed"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="@string/_2_hours_ago"
+            android:textColor="@color/white"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tw_profile_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:text="@string/one_of_the_best_thai_restaurants"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/iv_profile_location_image"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/sea_restaurant"
+            android:contentDescription="@string/sea_thai_restaurant" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tw_profile_location_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/la_valeriana_17a_sevilla_spain"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tw_profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/_222_202_202"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

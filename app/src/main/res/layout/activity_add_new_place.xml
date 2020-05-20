@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_gradient_yellow_linear_1920x1080_c2_ffffe0_006400_a_285_f_14"
+    tools:context=".activities.AddNewPlaceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_place"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Place Name:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_add_place_name"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="What is this place?"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_add_place_comment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Place address:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_place_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Contact info:"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ed_contact_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            tools:ignore="LabelFor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_new_place_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/add_location"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/bt_new_place_pictures"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/add_picure"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_new_place_add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:drawableStart="@drawable/ic_action_tick"
+                android:text="@string/add_place"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/bt_new_place_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorDarkRed"
+                android:drawableStart="@drawable/ic_action_cancel"
+                android:text="@string/cancel"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_pictures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"
+            android:paddingBottom="10dp"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+</ScrollView>

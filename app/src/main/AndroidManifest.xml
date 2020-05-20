@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aleksandra.backpack">
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".BackpackApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/hiking_backpack_braon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/hiking_backpack_braon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SigninActivity" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.SigninActivity" />
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label=" "
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.PlacesActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.HomeActivity" />
+        <activity android:name=".activities.NewCommentActivity" />
+        <activity
+            android:name=".activities.GalleryActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.PlacesActivity" />
+        <activity
+            android:name=".activities.EventsActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.HomeActivity" />
+        <activity
+            android:name=".activities.EventActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.EventsActivity" />
+        <activity
+            android:name=".activities.PeopleGoingToEvent"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.EventActivity" />
+        <activity android:name=".activities.GoogleMapActivity" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.HomeActivity" />
+        <activity android:name=".activities.AddEventActivity"
+            android:launchMode="singleTop"
+            />
+        <activity android:name=".activities.AddNewPlaceActivity"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name=".activities.RankActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.HomeActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".activities.MainGoogleMapActivity"
+            android:label="@string/title_activity_main_google_map" />
+        <activity
+            android:name=".activities.FiltersActivity"
+            android:label="@string/title_activity_filters"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.UpcomingEventsActivity"
+            android:label="@string/title_activity_upcoming_events"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <service android:name=".activities.BackgroundService" />
+
+        <receiver android:name=".activities.ResponseReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>>
+        </receiver>
+    </application>
+
+</manifest>

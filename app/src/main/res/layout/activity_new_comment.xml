@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/green_gradient_yellow_linear_1920x1080_c2_ffffe0_006400_a_285_f_14"
+    tools:context=".activities.NewCommentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:text="@string/add_comment"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/ed_new_comment"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:ems="10"
+        android:background="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:layout_gravity="top"
+        tools:ignore="LabelFor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_new_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_action_tick"
+            android:background="@color/yellow"
+            android:text="@string/add_comment"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/bt_new_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_action_cancel"
+            android:background="@color/colorDarkRed"
+            android:text="@string/cancel"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

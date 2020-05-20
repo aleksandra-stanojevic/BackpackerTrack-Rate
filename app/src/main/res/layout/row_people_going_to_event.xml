@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:orientation="vertical"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_people_going_to_event_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tw_people_going_to_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/colorGrayDark"
+                android:textSize="16sp"
+                tools:text="@string/anne_smith" />
+
+            <TextView
+                android:id="@+id/tw_people_going_to_event_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLines="1"
+                android:textColor="@color/colorGrayMedium"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                tools:text="@string/england" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tw_going"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorGrayMedium"
+            android:text="@string/going"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_below_player_name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrayLightLight" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "23389615771",
+    "firebase_url": "https://backpack-cca96.firebaseio.com",
+    "project_id": "backpack-cca96",
+    "storage_bucket": "backpack-cca96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23389615771:android:731304606f09102d",
+        "android_client_info": {
+          "package_name": "com.example.aleksandra.backpack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23389615771-vsogj9nags1hin0hemr04u1h6v0bosml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aleksandra.backpack",
+            "certificate_hash": "106f76f20aaf0f795da9a08c4bb2983077a3cb45"
+          }
+        },
+        {
+          "client_id": "23389615771-it381jd67kjsf78c91m5p3stetslcmmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9igyQut4NIx1cEfntbGzuheg5pe9HzPg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23389615771-it381jd67kjsf78c91m5p3stetslcmmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
